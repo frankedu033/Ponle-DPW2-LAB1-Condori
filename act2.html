@@ -1,0 +1,78 @@
+/* ===== ESTILO GENERAL ===== */
+
+body{
+font-family: Arial, sans-serif;
+}
+
+/* SIDEBAR */
+.sidebar{
+height:100vh;
+background:#343a40;
+color:white;
+padding:20px;
+transition:0.3s;
+}
+
+.sidebar a{
+color:white;
+display:block;
+margin:10px 0;
+text-decoration:none;
+}
+
+.sidebar a:hover{
+background:#495057;
+padding-left:10px;
+}
+
+/* CONTENIDO */
+.content{
+padding:20px;
+background:#f8f9fa;
+min-height:100vh;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* 🔵 Pantallas grandes */
+@media (min-width:1200px){
+body{
+font-size:18px;
+}
+
+.content{
+background:#e3f2fd;
+}
+}
+
+/* 🟢 Tablets */
+@media (max-width:992px){
+body{
+font-size:16px;
+}
+
+.content{
+background:#e8f5e9;
+}
+}
+
+/* 🔴 Celulares */
+@media (max-width:768px){
+
+/* ocultar sidebar */
+.sidebar{
+display:none;
+}
+
+/* contenido ocupa todo */
+.content{
+width:100%;
+background:#fff3e0;
+}
+
+/* texto más pequeño */
+body{
+font-size:14px;
+}
+
+}
